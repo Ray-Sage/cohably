@@ -362,6 +362,8 @@ nav a:hover{
 }
 
 
+
+
 #find-a-place input, select{
     padding: 10px;
     outline: none;
@@ -444,9 +446,11 @@ footer a{
 
 
 /* Phones */
+
 @media (max-width: 480px) {
 
-  #find-a-place{
+
+   #find-a-place{
         width: 100%;
         height: 100%;
         border-top-right-radius: 60px;
@@ -572,6 +576,7 @@ footer a{
 }
 
 /* Tablets */
+
 @media (min-width: 481px) and (max-width: 768px) {
     /* Your tablet styles here */
     #find-a-place{
