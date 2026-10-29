@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cohably | Find your Room & Uni Mates</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Cohably allows you to find your university or classmates. It helps you find your room, and also helps you get find new friends">
+
+        <link rel="icon" href="favicon.jpg">
+        <link rel="stylesheet" href="index.css?v=1">
+        <link rel="stylesheet" href="about.css">
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                
+     <a class="brand" href="index.html" aria-label="Cohably home">
+        <span class="brand-mark" aria-hidden="true"><span></span><i></i></span>
+        <span class="logo"></span>
+      </a>
+                <div>
+                <a href="signup.html">Get Started</a>
+                <a href="bookroom.html">Find Room</a>
+                <a href="transport.html">Buy Bus Ticket</a>
+                <a href="about.html">About</a>
+                <a href="help.html">Help Center</a>
+                </div>
+                <div class="ham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </nav>
+            <div class="menu hidden">
+                <a href="signup.html">Get Started</a>
+                <a href="bookroom.html">Find Room</a>
+                <a href="transport.html">Buy Bus Ticket</a>
+                <a href="about.html">About</a>
+                <a href="help.html">Help Center</a>
+                <button class="close">Close</button>
+            </div>
+            <script>
+                const ham = document.querySelector('.ham');
+                const menu = document.querySelector('.menu');
+                const close = document.querySelector('.close');
+
+                ham.addEventListener('click', () => {
+                    menu.classList.remove('hidden');
+                    menu.classList.add('show');
+                });
+
+                close.addEventListener('click', () => {
+                    menu.classList.remove('show');
+                    menu.classList.add('hidden');
+                });
+                </script>            
+        </header>
+
+<div class="parent-hero">
+
+
+        <div class="hero">
+            <span class="start">NEVER MISS A CHANCE</span>
+            <h1>Preserve for yourself a Room. <span>Make friends to help you as you come for School. </span></h1>
+            <p>Find boarding houses, squarting space, study mates, products, updates from your frineds, join rooms, find uni mates and many more. All in one platform!</p>
+            <div class="space"></div>
+            <a href="bookroom.html"
+           class="btn btn-primary"
+           >
+            Explore Rooms &rarr;
+        </a>
+
+         <a href="transport.html"
+           class="btn btn-secondary"
+           >
+            Reserve Bus seat
+        </a>
+
+        
+        
+        </div>
+
+        <div class="design">
+
+            <h3>It's possibly Cohably!</h3>
+            <h2>Find what benefits your life </h2>
+            <p>Never miss a bus, room, friend, study mates, and more. Uni life made easy for everyone. </p>
+            
+                <hr><a href="bookroom.html">Find Room <span id="pointer">&nearr;</span>
+                <span>Boading house or squarting space</span> </a>
+                
+                <hr>
+                <a href="about.html"> About Us <span id="pointer">&nearr;</span>
+                 <span>Who we are and what we do</span></a>
+                <hr>
+                <a href="help.html">Help Center <span id="pointer">&nearr;</span>
+                 <span>Answers to your questions and problems</span></a>
+                <hr>
+
+        </div>
+
+        
+
+        
+
+
+</div>
+
+<div id="find-a-place" class="hid">
+    
+        <h1>Find a boading house or room <span class="x">X</span></h1>
+    
+        <p>Fill in the form below to find a boarding house or squarting place of your choice. You can cancel this if you are not yet ready</p>
+        <label>School or University *</label>
+        <select name="school"> 
+            <option disabled selected>Choose your school</option>
+            <option value="mu">Mulungushi university</option>
+            <option value="cbu">Coperbelt university</option>
+            <option value="unza">University of Zambia</option>
+            <option value="knu">Kwame Nkrumah University</option>
+            <option value="km">Kapasa Makasa</option>
+            <option value="zut">Zambia University of Technology</option>
+            <option value="other">Other</option>
+        </select>
+
+         <label>Location Preference *</label>
+        <select name="where">
+            <option disabled selected>Choose your location preference</option>
+            <option value="near">Near Compass </option>
+            <option value="walkable">As long as it's walkable</option>
+            <option value="far">Even if it's far</option>
+            <option value="anywhere">Anywhere</option>
+            
+        </select>
+
+        <label>What's your budget? (optional)</label>
+        <select name="budget">
+            <option disabled selected>Choose your budget</option>
+            <option value="below">Below K1,000</option>
+            <option value="one2two">K1,000 - K2, 000</option>
+            <option value="three2five">K3,000 - K5, 000</option>
+            <option value="above">above K5, 000</option>
+
+        </select>
+        <button>Check availability</button>
+    
+</div>
+
+<section id="hook">
+     <h1>Get ahead of others</h1>
+     <p>With Cohably, you will get a room and view it before others even get a chance. We always update our users Full-Time on new boading houses, and squarting spaces available.</p>
+</section>
+
+<section id="services">
+    
+     <h5>Explore Cohably</h5>
+     <p>Explore diffrent types of services we offer.</p>
+ <div id="allservices">
+
+ 
+     <div class="service">
+        <h3>Room Reservation</h3>
+        <p>Get a good room of your choice. We offer available boarding houses which are still not occupied for all Zambian universities</p>
+        <a class="link" href="bookroom.html">Check Available Rooms <span>&rarr;</span></a>
+     </div>
+
+      <div class="service">
+        <h3>Bus Sit Reservation</h3>
+        <p>Get a bus ticket if you come from a far place. You can register for public transport from your home to the School</p>
+        <a class="link" href="transport.html">Check Available Sits <span>&rarr;</span></a>
+     </div>
+
+      <div class="service">
+        <h3>Sell and Buy Goods</h3>
+        <p>If you have something you are selling, a service you wan't or wan't to buy, Cohably got you covered. Visit our marketplace</p>
+        <a class="link" href="marketplace.html">Check Products <span>&rarr;</span></a>
+     </div>
+
+</div>
+
+</section>
+
+<div class="outro">
+    <h1>
+    Your Jouney Starts Here!
+</h1>
+<p>Check available borading houses and squarting spaces available. Rooms move fast across university, harry and reserve yours now.</p>
+<p>You can also Join our Cohably Community. Where schools and mates come together. Join our Cohably Community and never miss an update from your fellow uni mates <br> In our community, you will know what is going on on compass</p>
+<div class="space"></div>
+<a class="btn btn-secondary" href="bookroom.html">Check Room</a>
+<a class="btn btn-secondary" href="signup.html">Join Cohably</a>
+
+</div>
+
+
+
+
+
+<footer>
+    <h6>It's Possibly Cohably</h6>
+
+     <a class="brand" href="index.html" aria-label="Cohably home">
+        <span class="brand-mark" aria-hidden="true"><span></span><i></i></span>
+        <span class="logo"></span>
+      </a>
+      
+    
+    <p>Making university life easier for everyone</p><br>
+    
+    <a href="bookroom.html">Rooms</a>
+    <a href="feed.html">Feed</a>
+    <a href="help.html">Help Center</a>
+
+
+    <hr id="hr">
+
+    <p id="copy">&COPY; <span class="currentYear"></span> Cohably. All Rights Reserved</p>
+</footer>
+
+
+
+<script>
+    const current = new Date().getFullYear();
+    const update = document.querySelector('.currentYear');
+    update.innerHTML = current;
+
+   
+
+   const popup = document.querySelector('#find-a-place');
+
+setTimeout(() => {
+    popup.classList.add('showHidden');
+}, 4000);
+
+document.querySelector('.x').addEventListener('click', () => {
+    popup.classList.remove('showHidden');
+    popup.classList.add('hid');
+});
+</script>
+
+    </body>
+</html>
